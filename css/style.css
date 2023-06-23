@@ -1,0 +1,641 @@
+/* NAVBAR */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    left: 0;
+    z-index: 2;
+
+    
+}
+
+.header-scrolled{
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right:0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index:999;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.header .navbar {
+    background: url("../images/header-bg.png") no-repeat center center/contain;
+    padding: 2rem 5rem;
+    /* position: fixed; */
+    /* top: 0; */
+
+}
+
+/* logo */
+.header .navbar-brand {
+    width: 7.5rem;
+    margin-top: -0.1rem;
+}
+
+/* home about.. */
+.header .navbar-nav .nav-link {
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    margin: 0 0.2rem;
+
+
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+}
+
+
+/* hamburger */
+.header .navbar-toggler {
+    color: var(--text-white);
+    font-size: 2rem;
+    height: 2.7rem;
+    padding: 0;
+
+}
+
+.header .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* call us */
+.header .header_right span {
+    color: var(--secondary-color);
+    display: block;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+
+
+}
+
+.header .header_right .phone_no {
+    color: var(--text-white);
+    font-size: 1.6rem;
+}
+
+
+
+/* scroll */
+
+.header-scrolled {
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index: 999;
+    transition: 0.3s all ease-in-out;
+
+}
+
+
+/* banner */
+.banner-section {
+    background: url('https://images.unsplash.com/photo-1625715490354-9a37e8298bf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGVhJTIwbGVhdmVzfGVufDB8fDB8fHww&w=1000&q=80') no-repeat center center/cover;
+    height: 100vh;
+   
+
+}
+
+.banner-section .carousel-item {
+    padding: 3rem 0;
+    height: 90vh;
+}
+
+
+
+.banner-section .carousel-caption {
+    top: 30%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+
+    text-align: left;
+    width: 100%;
+    
+}
+
+.banner-section .carousel-caption h3 {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--dark-color);
+    display: inline-block;
+    /* margin: 4px 0; */
+   
+
+
+}
+
+.banner-section .carousel-caption p {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+    
+    color: #000;
+
+}
+
+
+
+/* features */
+
+.feature_section .features-box {
+    width: 100%;
+    background-color: transparent;
+    border: 0.15rem solid var(--light-color);
+    padding: 4rem 2rem;
+    transition: all 0.5s ease-in;
+}
+
+
+.feature_section .feature-icon-border {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2rem solid var(--light-color);
+    padding: 1.3rem;
+    display: inline-block;
+}
+
+.feature_section .features-box .features-icon {
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: var(--light-color);
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.feature_section .features-box .features-icon img {
+    width: 4rem;
+
+}
+
+.feature_section .features-box h3,
+.feature_section .features-box p {
+    margin-top: 1.5rem;
+    color: var(--primary-text);
+}
+
+.feature_section .features-box:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+
+}
+
+
+.feature_section .features-box:hover h3 ,
+.feature_section .features-box:hover  p {
+    color: var(--text-white);
+}
+
+.about .feature_section .features-box:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+  
+ 
+
+}
+
+
+.about 
+.feature_section .features-box:hover h3 ,
+.feature_section .features-box:hover  p {
+    color: var(--text-white);
+}
+
+
+
+
+.feature_section .features-box:hover .feature-icon-border {
+    border-color: var(--secondary-color);
+}
+
+
+
+/* about */
+
+.landing_about_section {
+    background: url("../images/about/about-banner.jpg") no-repeat center center/cover;
+    padding: 9rem 0;
+}
+
+
+.landing_about_section p {
+    color: var(--primary-text);
+    margin-bottom: 2rem;
+}
+
+
+
+/* product */
+.bestseller_section .product-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 2rem 1rem;
+    border: 0.2rem solid var(--light-color);
+    transition: all 0.3s;
+}
+
+.bestseller_section .product-card .product-img {
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.bestseller_section .product-card h3 {
+    color: var(--primary-text);
+}
+
+.bestseller_section .product-card span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+    text-decoration: line-through;
+    transition: all 0.3s;
+}
+
+.bestseller_section .product-card .product-detail {
+    position: absolute;
+    bottom: -22rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: var(--dark-color);
+    transition: all 0.5s ease;
+
+}
+
+.bestseller_section .product-card:hover .product-detail {
+    bottom: 0;
+
+}
+
+
+/* testomonials */
+.testimonial_section {
+    background-color: var(--light-color);
+    padding-bottom: 8rem;
+}
+
+.testimonial_section .carousel-indicators {
+    bottom: -6rem;
+}
+
+.testimonial_section .carousel-indicators button {
+    background-color: var(--dark-color);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+
+.testimonial_section .card {
+    background: url("../images/testimonial/testimonial-bg.png") no-repeat center center/cover;
+    text-align: right;
+    padding: 5rem 5rem 5rem 0;
+    border-radius: 0 0.5rem .5rem 0;
+    border: 0.1rem solid transparent;
+}
+
+.testimonial_section .profile-box {
+    padding: 1.875rem;
+    background-color: var(--dark-color);
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.testimonial_section .profile-box img {
+    border-radius: .625rem 3.125rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.testimonial_section .desc-box {
+    padding-left: 2.5rem;
+}
+
+.testimonial_section .carousel-control-prev,
+.testimonial_section .carousel-control-next{
+    display: none;
+}
+
+/* footer */
+
+.footer_wrapper {
+    /* background: url("https://freshstartliveoak.com/wp-content/uploads/2017/03/types-of-loose-leaf-tea-1.jpg") no-repeat center center/cover; */
+    background: url("../images/footer-bg/footer_bg.png") no-repeat center top/cover;
+    padding-top: 15rem;
+    padding-bottom: 0rem;
+
+}
+
+.footer_wrapper h5{
+    color: var(--text-white);
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer_wrapper ul li{
+    margin-bottom: 0.5rem;
+    list-style:  none;
+    
+}
+.footer_wrapper .company_details{
+    font-size: 1.4rem;
+}
+
+.footer_wrapper .contact-info li a{
+    color:var(--text-gray);
+    font-size: 1.6rem;
+
+}
+
+.footer_wrapper .link-widget li a,
+.footer_wrapper p{
+color: var(--text-gray);
+font-size: 1.6rem;
+padding-left: 1.5rem;
+position: relative;
+-webkit-transition: all 0.3s ease-out 0s;;
+transition: all 0.3s ease-out 0s;
+}
+
+.footer_wrapper .link-widget li a::before{
+content: '\f105';
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+position:absolute;
+left: 0.3rem;
+top: 50%;
+-webkit-transform:translateY(-50%);
+transform: translateY(-50%);
+}
+
+.footer_wrapper .link-widget li a:hover{
+    margin-left: 0.625rem;
+    color: var(--secondary-color);
+}
+
+.footer_wrapper .social-network a{
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    margin: 0.5rem;
+    padding:0.2rem;
+    display: inline-block;
+    border : 0.125rem solid var(--text-gray);
+    color: var(--text-gray);
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.035, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.035, 1);
+}
+
+.footer_wrapper .social-network a:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-white);
+    box-shadow: 0 0.625rem 0.9375rem 0 rgb(0 0 0 / 10%);
+    transform:translateY(-0.1875rem) ;
+
+}
+
+.footer_wrapper .form-control
+{
+    font-size: 2rem;
+    color: var(--text-white);
+}
+
+.footer_wrapper .form-control:focus
+{
+    outline: none;
+    box-shadow: none; 
+    border-color: var(--secondary-color);
+}
+
+
+.footer_wrapper .copywrite-section{
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin-top: 5rem;
+
+}
+
+.footer_wrapper .copywrite-section p{
+    margin-top: 0;
+    padding: 3rem 0;
+    line-height: 0;
+
+}
+
+.footer_wrapper .copywrite-section a{
+   color: var(--primary-text);
+   font-weight: 600; 
+}
+
+
+
+/* about page */
+
+.about .about-details {
+    padding-left:3rem;
+    width:100%;
+}
+
+.about button  
+ {
+    margin-top: 3rem;
+}
+
+
+.about .about-tag{
+    text-align: center;
+    padding: 0 30rem;
+    font-size: 32px;
+}
+
+.about .about-empw{
+     color: var(--secondary-color);
+     margin-bottom: 3rem;
+}
+
+
+/* profuct */
+.product .product-details p{
+ margin-bottom: 1.5rem ;  
+}
+
+.product .product-content h3{
+/* margin-bottom: -1; */
+font-family: Math;
+color: var(--primary-text);
+/* font-weight: 890; */
+}
+.product .product-content h5{
+/* margin-bottom: -1; */
+
+color: black;
+/* font-weight: 890; */
+}
+
+
+
+.contact .contact-form{
+    background-color: var(--light-color);
+    padding: 5rem;
+    box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 4%);
+    border-radius: 3px;
+}
+
+.contact .contact-form .form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.contact .contact-form .form-control::placeholder{
+   color: var(--primary-text);
+}
+.contact .contact-form .form-control{
+  padding:  1rem 1.5rem;
+  border: 0.1rem solid var(--secondary-color);
+  color: var(--primary-text);
+  font-size: 1.5rem;
+  font-weight: 400;
+
+}
+
+.contact .contact-form textarea{
+    min-height: 15rem;
+}
+.contact .contact-form .info-box li{
+    position:relative;
+    padding-left: 7rem;
+    padding-bottom: 3.5rem;
+    margin-bottom: 2.9rem;;
+
+
+}
+
+.contact .contact-form .info-box li i{
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    font-size:4.5rem;
+    line-height:4.5rem;
+    color: var(--primary-text);
+
+}
+.contact .contact-form .info-box li p{
+    color: var(--primary-text);
+}
+
+.contact .contact-form .info-box li a{
+    color: var(--dark-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+
+}
+
+.gallery-img-size img{
+    width: 424.99px;
+    height: 281.55px;
+}
+/*  */
+/* .container {
+    width: 100%;
+    height: 100vh;
+     */
+
+/* background: url("https://media.istockphoto.com/id/182181874/photo/tamil-pickers-plucking-tea-leaves-on-plantation.jpg?s=612x612&w=0&k=20&c=uO0JLQeDqoxWJkG4jGY9hTGVFE1LwpBm8mJHYvn2Rx0=") no-repeat center center/cover ; */
+/* box-shadow: rgb(11, 96, 3) 5px 0 8px 0px; */
+/* } */
+
+/* header{
+  
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding: 0.5llem 2em;
+ }
+ .logo img{
+   
+    border-radius: 50px;
+    width: 100px;
+    height:100px;
+    
+}  */
+/* 
+.text{
+    color:white;
+    margin: 12% 15%;
+    width:30%;
+   
+}
+.text h1{
+    font-size: 48px;
+}
+.text h2
+{
+    padding: 0.5em;
+    width:fit-content;
+    
+    background-color: rgb(4, 53, 4);
+}
+.text p {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0.5em ;
+}
+
+.services{
+    margin:6em 16em;
+}
+
+.services .card img{
+    width: 40%;
+    height: 44%;
+    border : 5px double rgb(95, 235, 95) ;
+    border-radius: 50px;;
+    padding : 10px;
+    margin-bottom:  10px;
+}
+
+.services .card p{
+ font-size: 24px;
+ font-weight: 600;
+}
+
+.main_about{
+    background: url("https://media.istockphoto.com/id/1400811361/photo/an-asian-woman-farmer-is-holding-tea-leaves-in-a-tea-garden.jpg?s=612x612&w=0&k=20&c=IdYr4UuhlB7xXimrACMRWBb71m9s7qZFSK9rTYTZbiY=") no-repeat center center/cover ;
+    color:white;
+    padding: 6em 5em;
+    margin-bottom :2em;
+   
+
+
+}
+
+.main_about p{
+    margin-top: 25px;
+    width: 50%
+} */

@@ -1,0 +1,260 @@
+*, * ::before,
+ *::after {
+
+    /* used for browser support */
+    -webkit-box-sizing: border-box; /* crome, safari */
+    -moz-box-sizing: border-box; /* firefox  */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    
+}
+
+:root{
+
+    --bg-white: #fff;
+    --primary-text: #061738;
+    --secondary-color: #60cd12;
+    --light-color: #e2f6de;
+    --dark-color: #03262c;
+    --text-white: #fff;
+    --text-gray: #dee2e6;
+    --anchor-color: #007aff;
+
+
+}
+
+html, body{
+    color: var(--primary-text);
+    font-size: 10px;
+    scroll-behavior: smooth;
+    font-weight: 400;
+    line-height: 1.5;
+    /* margin: 0; */
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: 'Bitter', serif;
+    /* font-size: 600; */
+
+}
+
+ p{
+    margin: 0;
+   
+
+}
+h1{
+    font-size: 9rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: var(--primary-text)
+}
+
+
+h2{
+    color: var(--primary-text);
+    font-size:4.7rem;
+    font-weight: 600;
+    display:inline-block;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+h3{
+    color: var(--text-white);
+    font-size: 3.1rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h4{
+    color: var(--primary-text);
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+h5{
+    color: var(--primary-text);
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+p{
+    color: var(--primary-text);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 1rem;;
+    /* font-weight: 600;  */
+}
+
+
+embed, iframe, img, object{
+    max-width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+a, a:active, a:focus, a:hover, button{
+    text-decoration: none;
+    outline:none;
+}
+
+li a{
+    color: var(--text-white);
+    
+}
+
+a:hover, button:hover{
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #60cd120a;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+}
+
+
+.main-btn{
+    position: relative;
+    margin-top: 1.5rem;
+    /* padding: 10px 28px; */
+    font-size: 1.8rem;
+    background: linear-gradient(to right, #0f7404,  #5cb917);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid var(--bg-white);
+    text-transform: uppercase;
+    border-radius: 3.5rem;
+    padding: 1rem 3.5rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    color: var(--bg-white);
+    font-weight: 600; 
+    } 
+
+    .main_btn:hover{
+        background: var(--bg-white);
+        color: var(--secondary-color);
+        border: 0.2rem solid var(--secondary-color);
+    }
+    
+
+
+    section{
+        padding: 5rem 0;
+
+    }
+
+
+    .section-title{
+font-size: 4rem;
+font-weight: 600;
+color: var(--primary-text);
+text-transform: capitalize;
+margin-bottom: 2rem;
+    }
+
+
+    .section-subtitle{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--primary-text);
+        max-width: 40%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .about .banner_section, 
+    .product .banner_section,
+    .gallery .banner_section,
+    .contact .banner_section,
+    .distributors .banner_section{
+ background:url("https://cdn.britannica.com/89/102489-050-FD2DE9F4/Women-tea-leaves-hand-plantation-India-Kaziranga.jpg") no-repeat center center/cover;
+
+ padding-top: 17rem;
+ padding-bottom:10rem;
+ min-height: auto;
+ 
+ /* text-align: center; */
+
+ 
+
+    }
+    .about .banner_section h1, 
+    .product .banner_section h1,
+    .gallery .banner_section h1,
+    .contact .banner_section h1,
+    .error.banner_section h1{
+ 
+ font-family:MATH;
+
+ color: var(--text-white);
+ /* font-weight: 600; */
+
+    }
+
+
+
+/* .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+    right: 20px;
+    padding: 1em;
+
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
+}
+
+  
+    .card{
+        text-align: center;
+       
+        padding: 4% 2% 2% 2%;
+        width: 220px;
+        height: 220px;
+        box-shadow:  rgb(11, 96, 3) 0px 0px 1px 0 ;
+    
+        
+    }
+
+    .bold{
+        font-weight: 600;
+
+    } */
