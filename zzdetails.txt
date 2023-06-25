@@ -1,3 +1,4 @@
-bootstrap - coursal, navbar
+bootstrap5 - Carousel, navbar
 html, css, js
-fontawseom
+fontawesome-icons
+https://sakshiwalode28.github.io/teasite/
