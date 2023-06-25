@@ -211,8 +211,7 @@
 }
 
 
-.about 
-.feature_section .features-box:hover h3 ,
+.about .feature_section .features-box:hover h3 ,
 .feature_section .features-box:hover  p {
     color: var(--text-white);
 }
@@ -226,10 +225,11 @@
 
 
 
-/* about */
+/* about --- index.html */
 
 .landing_about_section {
-    background: url("../images/about/about-banner.jpg") no-repeat center center/cover;
+    background: url("https://img.freepik.com/free-photo/peppermint-tea-glass-ready-drink_1150-38045.jpg?size=626&ext=jpg&ga=GA1.2.2043277588.1669472766&semt=ais") no-repeat center center/cover;
+    /* background: url("https://images.unsplash.com/photo-1585849835117-1446a1514ea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRlYSUyMGxlYXZlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover; */
     padding: 9rem 0;
 }
 
@@ -460,18 +460,20 @@ transform: translateY(-50%);
     width:100%;
 }
 
-.about button  
+.about .about-details button  
  {
     margin-top: 3rem;
 }
 
 
-.about .about-tag{
+.about  .about-tag{
     text-align: center;
-    padding: 0 30rem;
+    padding: 0 15rem;
     font-size: 32px;
 }
-
+.abthead{
+    font-size:10px;
+}
 .about .about-empw{
      color: var(--secondary-color);
      margin-bottom: 3rem;

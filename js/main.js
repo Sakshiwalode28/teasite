@@ -5,6 +5,13 @@ window.onscroll = function(){
     else nav.classList.remove("header-scrolled");
 }
 
+let abthead  = document.querySelector(".about-tag");
+window.screen = function(){
+    if(document.documentElement.screenWidth > 400)
+        abthead.classList.add("abthead");
+    else abthead.classList.remove("abthead");
+}
+
 
 let navBar = document.querySelectorAll(".nav-link");
 let navCollapse = document.querySelector(".navbar-collapse.collapse")
@@ -14,11 +21,5 @@ navBar.forEach(function(e){
     })
 
 })
-// let navbar = document.querySelectorAll(".header");
-// let navFixed = document.querySelector(".header.fixing-on-scroll")
-// navbar.forEach(function(e){
-//     e.onscroll("click", function(){
-//         navCollapse.classList.remove("show");
-//     })
-// })
+
 
